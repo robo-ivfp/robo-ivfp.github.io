@@ -94,7 +94,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="#"
+                <a href="https://www.mmurray.com/papers/aurmr_hitl_icra24.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -267,37 +267,104 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-4">Model Architecture</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <img src="./static/images/combined_figure.png" />
+        <p>Architectures of the neural networks used to model the grasp policy and grasp classifier. The policy takes as input the current RGB image and target object mask. The output includes a 3D grasp position and pre-grasp gripper width. The input to the classifier is a video of the interactive perception policy testing a grasp. The output is a grasp class prediction.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-      <div class="column is-full-width">
+      <div class="column is-full-width has-text-centered">
         <h2 class="title is-4">Learning from Human Supervision</h2>
       </div>
     </div>
-
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-4">Classifying Grasps with Interactive Probes</h2>
+      <div class="column">
+        <video autoplay controls muted loop playsinline height="100%" style="border-radius:10px">
+          <source src="./static/videos/interface_demo_0_5x_text.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="column">
+        <img src="./static/images/aurmr_hitl_interface.png" />
       </div>
     </div>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-4">Verification in the Loop</h2>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+      <div class="column is-full-width has-text-centered">
         <h2 class="title is-4">Learning from Experience</h2>
       </div>
     </div>
-
-
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="columns">
+          <div class="column">
+            <video autoplay controls muted loop playsinline height="100%" style="border-radius:10px">
+              <source src="./static/videos/grip_demo_autoexplore_0_5x_cropped_text.mp4"
+                      type="video/mp4">
+            </video>
+            <video autoplay controls muted loop playsinline height="100%" style="border-radius:10px">
+              <source src="./static/videos/grip_demo_autoexplore_1_5x_cropped_text.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="column">
+            <video autoplay controls muted loop playsinline height="100%" style="border-radius:10px">
+              <source src="./static/videos/grip_demo_autoexplore_2_5x_cropped_text.mp4"
+                      type="video/mp4">
+            </video>
+            <video autoplay controls muted loop playsinline height="100%" style="border-radius:10px">
+              <source src="./static/videos/grip_demo_autoexplore_3_5x_cropped_text.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./static/images/aurmr_hitl_phase2.png" />
+      </div>
+    </div>
   </div>
 </section>
+
+<section class="section"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-4">Classifying Grasps with Interactive Probes</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="columns">
+          <div class="column">
+            <img src="./static/images/classifier_demo_30.gif" />
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./static/images/aurmr_hitl_table3.png" />
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- <section class="section" id="BibTeX">
